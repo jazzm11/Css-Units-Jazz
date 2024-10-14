@@ -1,0 +1,137 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="table">
+        <div class="units">
+            <h1>em</h1>
+            <p>1em equals the font size of the element in which it is used.
+                <ul>
+                    <li>
+                        If no font size is set on the element, it inherits the font size from its parent.
+                    </li>
+                    <li>
+                        For example, if a parent element has a font size of 16px, then 1em inside that parent will also equal 16px.
+                    </li> 
+                    <li id="em">
+                        Denne teksten er 3em 
+                    </li>
+                </ul>
+            </p> 
+        </div>
+        <div class="units">
+            <h1>ex</h1>
+            <p>1ex equals the height of the lowercase "x" in the current font.
+                <ul>
+                    <li>
+                        Since different fonts have different "x-heights," the ex value can vary across fonts even if they are set to the same font size.
+                    </li>
+                    <li id="ex">
+                        Denne teksten er 3ex 
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <div class="units">
+            <h1>ch</h1>
+            <p>
+                1ch equals the width of the "0" character in the current font.
+                <ul>
+                    <li>
+                        Different fonts have different widths for the "0" character, so the value of ch can vary between fonts, even if they are set to the same font size.
+                    </li>
+                    <li id="ch">
+                        Denne teksten er 3ch 
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <div class="units">
+            <h1>rem</h1>
+            <p>1 rem equals the font size of the root element. For example, if the root element's font size is 16px (which is common), then 1rem = 16px. </p>
+            <p id="rem">Denne teksten er 3rem</p>
+        </div>
+        <div class="units">
+            <h1>vw</h1>
+            <p>
+                1vw is equal to 1% of the width of the viewport.
+                <ul>
+                    <li>
+                        So, if the viewport is 1000px wide, 1vw would be equal to 10px.
+                    </li>
+                    <li>
+                        As the viewport size changes (due to resizing the window or using different devices), elements sized with vw units adjust dynamically.
+                    </li>
+                    <li id="vw">
+                        Denne teksten er 3vw 
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <div class="units">
+            <h1>vh</h1>
+            <p>equal to 1% of the height of the browser window size.
+                <ul>
+                    <li>
+                        For example, if the viewport is 1000px tall, 1vh will be equal to 10px.
+                    </li>
+                    <li>
+                        Like vw, the vh unit adjusts as the viewport size changes (e.g., resizing the browser or switching to different devices).
+                    </li>
+                    <li id="vh">
+                        Denne teksten er 3vh 
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <div class="units">
+            <h1>vmin</h1>
+            <p>1vmin equals 1% of the smaller side of the viewport.
+                <ul>
+                    <li>
+                        If the viewport is 1000px wide and 600px tall, 1vmin would be 6px, since the height is smaller.
+                    </li>
+                    <li>
+                        As the viewport resizes, vmin adjusts accordingly, depending on the smaller dimension at any given moment.
+                    </li>
+                    <li id="vmin">
+                        Denne teksten er 3vmin 
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <div class="units">
+            <h1>vmax</h1>
+            <p>
+                1vmax equals 1% of the larger dimension of the viewport.
+                <ul>
+                    <li>
+                        For example, if the viewport is 1200px wide and 800px tall, 1vmax would be 12px, since the width is larger.
+                    </li>
+                    <li>
+                        Like other viewport units, vmax adjusts dynamically as the viewport size changes (due to resizing or device orientation changes).
+                    </li>
+                    <li id="vmax">
+                        Denne teksten er 3vmax 
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <div class="units">
+            <h1>%</h1>
+            <p>relative to the value of parent element. 100% is the width of the parent element.</p>
+            <p id="percent">Denne teksten er 3%</p>
+        </div>
+        <div class="units">
+            <h1>px</h1>
+            <p>Fixed Measurement: One pixel (1px) corresponds to one dot on the computer screen. This means that a size set in pixels does not change based on other factors like screen size or user preferences.</p>
+            <p id="px">Denne teksten er px</p>
+        </div>
+    </div>
+</body>

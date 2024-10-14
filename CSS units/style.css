@@ -1,0 +1,44 @@
+#table {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 5px;
+}
+.units {
+    width: 33vh;
+    padding: 5px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+#em {
+    font-size: 3em;
+}
+#ex {
+    font-size: 3ex;
+}
+#ch {
+    font-size: 3ch;
+}
+#rem {
+    font-size: 3rem;
+}
+#vw {
+    font-size: 3vw;
+}
+#vh {
+    font-size: 3vh;
+}
+#vmin {
+    font-size: 3vmin;
+}
+#vmax {
+    font-size: 3vmax;
+}
+#percent {
+    font-size: 3%;
+}
+#px {
+    font-size: 3px;
+}
